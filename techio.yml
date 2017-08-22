@@ -4,4 +4,4 @@ plan:
 projects:
   java:
     root: /java-project
-    runner: techio/java-maven-runner:latest
+    runner: techio/java-maven-runner:1.0.0
