@@ -6,9 +6,6 @@
 	<artifactId>how-to-send-an-email-in-java</artifactId>
 	<version>1.0.0</version>
 
-	<name>how-to-send-an-email-in-java</name>
-	<description>How to send an email in Java</description>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
