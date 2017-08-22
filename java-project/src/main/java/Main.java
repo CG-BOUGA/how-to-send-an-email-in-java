@@ -1,7 +1,4 @@
 // { autofold
-package com.example;
-
-// import java.util.Properties;
 import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;

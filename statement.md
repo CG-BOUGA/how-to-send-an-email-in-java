@@ -1,4 +1,4 @@
 @[]({
-  "stubs": ["src/main/java/com/example/Main.java"],
-  "command": "com.example.Main"
+  "stubs": ["src/main/java/Main.java"],
+  "command": "Main"
 })
