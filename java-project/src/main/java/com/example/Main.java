@@ -14,18 +14,21 @@ public static void main(String[] args) throws Exception {
 // }
 
 String from = "sender@gmail.com";
+String password = "sender's password";
 String to = "recipient@gmail.com";
 
-String host = "smtp.gmail.com";
-
 Properties properties = new Properties();
-properties.put("mail.smtp.host", host);
-// TODO: port? TLS?
+properties.put("mail.smtp.host", "smtp.gmail.com");
+properties.put("mail.smtp.port", 587);
 properties.put("mail.smtp.auth", "true");
-properties.put("mail.user", "my-username");
-properties.put("mail.password", "my-password");
+properties.put("mail.smtp.starttls.enable", "true");
 
-Session session = Session.getInstance(properties);
+Session session = Session.getInstance(properties, new Authenticator() {
+    @Override
+    protected PasswordAuthentication getPasswordAuthentication() {
+        return new PasswordAuthentication(from, password);
+    }
+});
 
 MimeMessage message = new MimeMessage(session);
 message.setFrom(new InternetAddress(from));
