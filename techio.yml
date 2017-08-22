@@ -1,8 +1,7 @@
-title : How to send an email in Java
+title: How to send an email in Java
 plan:
   - statement: statement.md
 projects:
   java:
     root: /java-project
-    buildCommand: mvn install
-    runner: maven:3.5.0-jdk-8
+    runner: techio/java-maven-runner:latest
